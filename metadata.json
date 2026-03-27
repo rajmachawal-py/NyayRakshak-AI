@@ -1,0 +1,5 @@
+{
+  "name": "NyayRakshak AI",
+  "description": "Justice Guardian AI: AI-powered legal contract analysis, risk assessment, and plain language explanation tool.",
+  "requestFramePermissions": ["microphone"]
+}

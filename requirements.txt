@@ -1,0 +1,52 @@
+# =========================
+# FastAPI Backend
+# =========================
+fastapi
+uvicorn
+python-multipart
+
+# =========================
+# AI / LLM (optional)
+# =========================
+openai
+
+# =========================
+# OCR (if using Python OCR)
+# =========================
+pytesseract
+Pillow
+
+# =========================
+# PDF Processing
+# =========================
+PyPDF2
+
+# =========================
+# NLP (optional for clause detection)
+# =========================
+spacy
+
+# =========================
+# Database (if used)
+# =========================
+pymongo
+sqlalchemy
+asyncpg
+psycopg2-binary
+passlib[bcrypt]
+
+# =========================
+# Environment Variables
+# =========================
+python-dotenv
+
+# =========================
+# Utils
+# =========================
+requests
+
+
+
+
+
+
