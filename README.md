@@ -2,8 +2,9 @@
 
 > **AI-powered contract review platform with enterprise-grade privacy controls, multilingual support, and intelligent clause analysis.**
 
-**Demo Video**
-https://drive.google.com/file/d/14pA7aNNbAYKzVQhalNoLLpMxBpr44QSh/view?usp=sharing
+**Demo Video:** https://drive.google.com/file/d/14pA7aNNbAYKzVQhalNoLLpMxBpr44QSh/view?usp=sharing
+
+**Live Deployment:** https://nyayrakshak-ai.onrender.com/
 
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev/)
@@ -23,6 +24,7 @@ https://drive.google.com/file/d/14pA7aNNbAYKzVQhalNoLLpMxBpr44QSh/view?usp=shari
 - [Privacy Mode](#privacy-mode)
 - [Getting Started](#getting-started)
 - [Deployment](#deployment)
+- [Team](#team)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -58,41 +60,41 @@ NyayRakshak AI follows a two-tier client-server architecture with a privacy-firs
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        CLIENT (Browser)                      │
-│                                                              │
+│                        CLIENT (Browser)                     │
+│                                                             │
 │   ┌─────────────┐    ┌──────────────┐    ┌───────────────┐  │
 │   │  Auth Layer │    │ Contract UI  │    │ Settings Panel│  │
 │   │ AuthScreen  │    │  App.tsx     │    │ Privacy Toggle│  │
 │   └──────┬──────┘    └──────┬───────┘    └───────┬───────┘  │
-│          │                  │                     │          │
-│          └──────────────────┴─────────────────────┘          │
-│                             │                                │
-│                    ┌────────▼────────┐                       │
-│                    │ Privacy Mode?   │                       │
-│                    └────────┬────────┘                       │
-│                   YES       │        NO                      │
+│          │                  │                     │         │
+│          └──────────────────┴─────────────────────┘         │
+│                             │                               │
+│                    ┌────────▼────────┐                      │
+│                    │ Privacy Mode?   │                      │
+│                    └────────┬────────┘                      │
+│                   YES       │        NO                     │
 │              ┌──────────────┤  ┌─────────────────┐          │
-│              │              │  │  gemini.ts       │          │
-│   ┌──────────▼───────┐      │  │  Cloud AI Client │          │
+│              │              │  │  gemini.ts       │         │
+│   ┌──────────▼───────┐      │  │  Cloud AI Client │         │
 │   │   localLLM.ts    │      │  └────────┬────────┘          │
-│   │ Local Heuristics │      │           │                    │
+│   │ Local Heuristics │      │           │                   │
 │   └──────────────────┘      └───────────┘                   │
 └─────────────────────────────────│───────────────────────────┘
                                   │  HTTP (REST)
                                   ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                     SERVER (Node/Express)                    │
-│                         server.ts                            │
-│                                                              │
-│  POST /api/analyze   POST /api/chat   POST /api/login        │
-│  POST /api/signup    GET  /api/me     GET  /api/export       │
-│                                                              │
+│                     SERVER (Node/Express)                   │
+│                         server.ts                           │
+│                                                             │
+│  POST /api/analyze   POST /api/chat   POST /api/login       │
+│  POST /api/signup    GET  /api/me     GET  /api/export      │
+│                                                             │
 │   ┌───────────────────────────────────────────────────────┐ │
-│   │              Analysis Decision Engine                  │ │
+│   │              Analysis Decision Engine                 │ │
 │   │   privacy_mode=true → local rule engine               │ │
 │   │   privacy_mode=false → Gemini / Groq API              │ │
 │   └───────────────────────────────────────────────────────┘ │
-│                                                              │
+│                                                             │
 │   ┌──────────────────┐       ┌────────────────────────────┐ │
 │   │  JWT Auth Layer  │       │  Optional: PostgreSQL DB   │ │
 │   │  Sessions, Tokens│       │  Users, Analyses, History  │ │
@@ -100,8 +102,8 @@ NyayRakshak AI follows a two-tier client-server architecture with a privacy-firs
 └─────────────────────────────────────────────────────────────┘
                                   │
                           ┌───────┴────────┐
-                          │  External APIs  │
-                          │  Gemini / Groq  │
+                          │  External APIs │
+                          │  Gemini / Groq │
                           └────────────────┘
 ```
 
@@ -332,6 +334,22 @@ NyayRakshak AI can be deployed on any platform that supports Node.js. Recommende
 
 ---
 
+## Team
+
+NyayRakshak AI was designed and built by:
+
+| Name | GitHub |
+|---|---|
+| **Jay Shimpi** | [@jayshimpi](https://github.com/jayshimpi) |
+| **Lakshay Vig** | [@lakshayvig](https://github.com/lakshayvig) |
+| **Aziz Sayyad** | [@azizsayyad](https://github.com/azizsayyad) |
+| **Vedant Patil** | [@vedantpatil](https://github.com/vedantpatil) |
+| **Riya Chavan** | [@riyachavan](https://github.com/riyachavan) |
+
+> Update the GitHub handles above with each team member's actual username.
+
+---
+
 ## Contributing
 
 Contributions are welcome. Please open an issue before submitting a pull request for significant changes.
@@ -368,4 +386,4 @@ NyayRakshak AI is provided as a proprietary application. All rights reserved. Ad
 
 ---
 
-<p align="center">Built with ⚖️ for modern legal workflows</p>
+<p align="center">Built with ⚖️ for modern legal workflows by the NyayRakshak AI team</p>
