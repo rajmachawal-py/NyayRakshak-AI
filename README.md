@@ -343,7 +343,7 @@ NyayRakshak AI was designed and built by:
 | **Jay Shimpi** | [@jayshimpi](https://github.com/jayshimpi) |
 | **Lakshay Vig** | [@lakshayvig](https://github.com/lakshayvig) |
 | **Aziz Sayyad** | [@azizsayyad](https://github.com/azizsayyad) |
-| **Vedant Patil** | [@vedantpatil](https://github.com/vedantpatil) |
+| **Vedant Patil** | [@VedantPatil](https://github.com/VedantPatil0525) |
 | **Riya Chavan** | [@riyachavan](https://github.com/riyachavan) |
 
 > Update the GitHub handles above with each team member's actual username.
